@@ -5,7 +5,7 @@ MAINTAINER A. Datta <intersoftbengal@ymail.com>
 # Install packages (Modified by A. Datta)
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
-  apt-get -y install supervisor git apache2 php php-intl libapache2-mod-php7.0 mysql-server php7.0-mysql pwgen php-apcu php7.0-mcrypt php7.0-gd php7.0-sqlite3 && \
+  apt-get -y install supervisor git apache2 php php-intl libapache2-mod-php7.0 mysql-server php7.0-mysql pwgen php-apcu php7.0-mcrypt && \
   echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Add image configuration and scripts
